@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+html {
+    --primary-color: #512C73;
+    --secondary-color: #361356;
+    --tertiary-color: #6F4D8F;
+    --accent-color: #9277AC;
+    --background-color: #200439;
+    
+    /* If we add any padding or border onto an element it does not affect the width of the element */
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+   /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;  /* so that scroll bars are not shown by default */
+    margin: 0;
+    color: #fff;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav {
+    background-color: var(--background-color);
+    width: 25vw;
+    height: 100vh;
+}
+
+
+.hero {
+    background-image: url(assets/jayme-mccolgan-IP1rSwr8R6o-unsplash.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 75vw;
+    height: 100vh;
+}
