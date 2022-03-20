@@ -45,7 +45,7 @@ header {
     justify-content: space-around;
     align-items: center;
     overflow-y: auto;    /* add scrollbars back to the hero section only */
-    flex-grow: 5;
+    flex-grow: 11;
 }
 
 .hero-name {
