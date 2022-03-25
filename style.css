@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 
 html {
@@ -9,49 +9,44 @@ html {
     --background-color: #200439;
     --vegasGold-color: #c5b358;
 
-    /* If we add any padding or border onto an element it does not affect the width of the element */
+    /* If we add any padding or border onto an element it does not affect the width of the element.
+       This makes sure that the padding and border are included in the total width and height of the elements. */
     box-sizing: border-box;
+    font-size: 10px;
 }
-
 
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;  /* so that scroll bars are not shown by default */
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    /* so that scroll bars are not shown by default */
     margin: 0;
     color: #fff;
+    background-color: var(--background-color);
+    text-align: center;
 }
 
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.hero {
+.hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg).
     This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("assets/jayme-mccolgan-IP1rSwr8R6o-unsplash.jpg");
+    background-image: url("assets/jayme-mccolgan-IP1rSwr8R6o-unsplash.jpg");
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;    /* Center the image */
-    background-repeat: no-repeat;    /* Do not repeat the image */
-    background-size: cover;   /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;   /* Do not repeat the image */
+    background-size: cover;         /* Resize the background image to cover the entire container */
     position: relative;
-    height: 100vh;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow-y: auto;    /* add scrollbars back to the hero section only */
-    flex-grow: 11;
+    /* width: 100%;
+    overflow-y: auto;               /* add scrollbars back to the hero section only */
+    height:  70vh;
+}
+
+.hero-text {
+    margin: 10px;
+    text-align: center;
 }
 
 .hero-name {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--vegasGold-color);
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
-
-
