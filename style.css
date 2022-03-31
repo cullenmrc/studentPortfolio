@@ -74,7 +74,7 @@ header {
 }
 
 .btn {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     border: none;
     color: #fff;
     padding: 15px 32px;
@@ -86,7 +86,7 @@ header {
     cursor: pointer;
     transition-duration: 0.4s;
     border-radius: 3rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem var(--secondary-color);
+    box-shadow: 5px 5px 5px #000;
 }
 
 .btn:hover {
